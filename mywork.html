@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rajveer Singh</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mywork.css">
+<script src="myscript.js"></script>
+</head>
+<body>
+	<header>
+		<p>RAJVEER SINGH</p>
+		<nav>
+			<ul>	
+				<li class="active"><a href="mywork.html">My Work</a></li>
+				<li><a href="qualification.html">Qualification</a></li>
+				<li><a href="index.html">About Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="RS/Artboard 1.png" style="width: 100%";>
+		</div>
+		<div class="mySlides fade">
+			<img src="RS/Artboard 2.png" style="width: 100%";>
+		</div>
+		<div class="mySlides fade">
+			<img src="RS/Artboard 7.png" style="width: 100%";>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+	</div>
+	
+	<h1>Self Branding - R+S Logo</h1>
+	<hr color=#f0f7ee noshade width=1000px>
+	
+		<div class="slideshow-container">
+		<div class="mySlides2 fade">
+			<img src="Logo/backtoroots.png" style="width: 100%";>
+		</div>
+		<div class="mySlides2 fade">
+			<img src="Logo/ethnic.png" style="width: 100%";>
+		</div>
+		<div class="mySlides2 fade">
+			<img src="Logo/guide.png" style="width: 100%";>
+		</div>
+		
+		<a class="prev" onclick="plusSlides2(-1)">&#10096;</a>
+		<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+		
+	</div>
+	
+	<h1>Logo Brandings</h1>
+		
+	<footer>
+		<h2>Let's get in touch!</h2>
+		<div class="social">
+			<a href="https://twitter.com/RajveerXd" target="_blank">
+			<img onmouseover="mouseOver1()" onmouseout="mouseOut1()" id="twitter" src="1x/Asset 1.png">
+			</a>
+			<a href="https://www.behance.net/rajveersingh8" target="_blank">
+			<img onmouseover="mouseOver2()" onmouseout="mouseOut2()" id="behance" src="1x/Asset 2.png">
+			</a>
+			<a href="https://www.instagram.com/rajveer.2k1/?hl=en" target="_blank">
+			<img onmouseover="mouseOver3()" onmouseout="mouseOut3()" id="instagram" src="1x/Asset 3.png">
+			</a>
+			<a href="https://wa.me/message/YZUOJY2XRU6NL1" target="_blank">
+			<img onmouseover="mouseOver4()" onmouseout="mouseOut4()" id="whatsapp" src="1x/Asset 4.png">
+			</a>
+		</div>
+	</footer>
+	
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		showSlides2(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		function plusSlides2(n) {
+		  showSlides2(slideIndex += n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+		  slides[slideIndex-1].style.display = "block";  
+		}
+		
+		function showSlides2(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides2");
+		  if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+		  slides[slideIndex-1].style.display = "block";  
+		}
+	</script>
+</body>
+</html>
